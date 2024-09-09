@@ -78,7 +78,7 @@ const SideBar = () => {
             <div key={i} className="flex flex-col flex-1 gap-3">
               <Link
                 href={ele.href}
-                className={cn("flex w-full items-center gap-2 rounded text-secondary-main hover:bg-primary-main hover:text-black p-2" , ele.active ? "bg-primary-main text-black" : "")}
+                className={cn("flex w-full items-center gap-2 rounded text-secondary-main hover:bg-primary-main hover:text-black p-2 transition-transform" , ele.active ? "bg-primary-main text-black" : "")}
               >
                 {ele.icon} {ele.label}
               </Link>
