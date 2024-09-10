@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 const page = () => {
     const data = MyData.employedDetail;
+    
   return (
     <div>
         <EmployeeNavbar />
@@ -21,7 +22,7 @@ const page = () => {
                         </div>
                         <p className="text-white font-bold text-center mt-4">{ele.name}</p>
                         <p className="text-sm text-[#ffffff] text-center">{ele.role}</p>
-                        <p className="text-[#809FB8] text-xs text-center my-3 border border-[#809FB8] w-fit rounded p-1 mx-auto">Senior</p>
+                        <p className="text-[#809FB8] text-xs text-center my-3 border border-[#809FB8] w-fit rounded p-1 mx-auto">{ele.level}</p>
                     </div>
                     <div className="my-4 px-5 flex justify-between">
                         <div className="text-center">

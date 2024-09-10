@@ -6,6 +6,7 @@ import { FaArrowUpLong } from "react-icons/fa6";
 import { MyData } from '@/lib/Data';
 
 const page = () => {
+  const val = MyData.employedDetail.sort((a, b) => b.percent - a.percent);
   return (
       <div>
         <h1 className="text-[#EEF0F4] text-2xl font-bold">Dashboards</h1>
