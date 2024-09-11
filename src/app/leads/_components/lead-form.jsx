@@ -5,6 +5,7 @@ import { CiEdit } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
 
 const LeadForm = () => {
+  const [isList , setIsList] = useState([]);
   const [isForm , setIsForm] = useState({
     name:'',
     date:'',
@@ -31,6 +32,7 @@ const LeadForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(isForm , "2346789")
+    setIsList([...isList , isForm]);
   }
   return (
     <div className="max-w-3xl mx-auto p-8 h-[80vh] overflow-y-scroll">
@@ -184,6 +186,13 @@ const LeadForm = () => {
           </button>
         </div>
       </form>
+      {
+        isList.map((ele,i) => (
+          <div key={i}>
+            {ele.name}
+          </div>
+        ))
+      }
     </div>
   )
 }
