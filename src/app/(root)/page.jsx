@@ -21,7 +21,7 @@ const page = () => {
 
           </div>
           <div className="col-span-4 bg-primaryBg rounded-xl p-4 w-[95%]">
-            <h3 className='absolute top-2 left-4 text-white font-normal text-lg'>Employee Detailed</h3>
+            {/* <h3 className='absolute top-2 left-4 text-white font-normal text-lg'>Employee Detailed</h3> */}
             <div className="space-y-4 ">
               {
                 MyData.employedDetail.map((ele,i) => (

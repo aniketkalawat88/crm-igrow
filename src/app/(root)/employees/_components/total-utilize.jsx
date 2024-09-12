@@ -7,9 +7,9 @@ import { PieChart, Pie, Cell } from 'recharts';
 
 const RADIAN = Math.PI / 180;
 const data = [
-  { name: 'A', value: 80, color: '#ff0000' },
+  { name: 'A', value: 80, color: '#3662BB' },
   { name: 'B', value: 45, color: '#00ff00' },
-  { name: 'C', value: 25, color: '#0000ff' },
+  { name: 'C', value: 25, color: '#E0E0E0' },
 ];
 const cx = 150;
 const cy = 200;
@@ -45,8 +45,8 @@ const needle = (value, data, cx, cy, iR, oR, color) => {
 const TotalUtilize = () => {
   return (
     <div className="bg-primaryBg rounded-2xl relative flex justify-center items-center">
-      <h3 className='absolute top-2 left-4 text-white font-semibold text-2xl p-4'>Total Utilize Working Hours</h3>        
-      <PieChart width={300} height={400} className='scale-150 mt-8'>
+      <h3 className='absolute top-2 left-4 text-white font-semibold text-xl p-4'>Total Utilize Working Hours</h3>        
+      <PieChart width={300} height={300} className='scale-150 mt-8'>
         <Pie
           dataKey="value"
           startAngle={180}

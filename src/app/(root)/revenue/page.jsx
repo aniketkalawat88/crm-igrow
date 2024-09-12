@@ -64,6 +64,7 @@ const Revenue = () => {
             <RevenueComparison />
           </div>
           <div className="bg-[#1D232C]">
+            <p className="text-xl text-white p-6">Goals Revenue </p>
             <GoalsRevenue />
           </div>
         </div>
